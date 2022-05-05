@@ -122,6 +122,7 @@ class Home {
                 }
             }
 
+            console.log(JSON.stringify(opts, null, 4))
             playBtn.style.display = "none"
             info.style.display = "block"
             launch.launch(opts);

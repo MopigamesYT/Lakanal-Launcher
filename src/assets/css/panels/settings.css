@@ -41,6 +41,39 @@
     box-shadow: 0 0 5px #bd5d26;
 }
 
+.tab-btn-save-css {
+    border-radius: 23px;
+    width: 160px;
+    height: 37px;
+    margin: auto 30px;
+    background: #ff351a;
+    border: 4px solid #ff3030;
+    font: normal normal bold 20px/25px Poppins;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ff3030;
+    outline: none;
+}
+
+.tab-btn-save-css:hover {
+    background: #ff3030;
+    box-shadow: 0 0 5px #ff3030;
+    border: 4px solid #ff3030;
+}
+
+.active-tab-btn-save {
+    background: #bd1600;
+    border: 4px solid #bd5d26;
+    box-shadow: 0 0 5px #bd5d26;
+}
+
+.active-tab-btn-save:hover {
+    background: #bd1600;
+    border: 4px solid #bd5d26;
+    box-shadow: 0 0 5px #bd5d26;
+}
+
+
+
 .tabs-settings-content {
     position: absolute;
     top: 47%;

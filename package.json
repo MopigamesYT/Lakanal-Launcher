@@ -1,12 +1,12 @@
 {
-    "name": "Selvania-Launcher",
-    "version": "3.0.0-pre.1",
-    "productName": "Selvania Launcher",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "name": "lakanal-launcher",
+    "version": "3.0.1",
+    "productName": "Lakanal Launcher",
+    "description": "Lanceur Minecraft Lakanal",
     "main": "src/index.html",
-    "author": "Luuxis",
+    "author": "Luuxis, Mopigames",
     "window": {
-        "title": "Selvania update",
+        "title": "Lakanal update",
         "width": 400,
         "height": 500,
         "frame": false,
@@ -18,7 +18,7 @@
         "node": "16.x.x"
     },
     "chromium-args": "--enable-logging --v=1",
-    "url": "http://launcher.selvania.fr",
+    "url": "http://lakanal.000webhostapp.com",
     "user": false,
     "webkit": {
         "plugin": true
@@ -34,11 +34,16 @@
     },
     "license": "CC0",
     "build": {
-        "appId": "Selvania Launcher",
+        "appId": "Lakanal Launcher",
         "nwVersion": "0.60.0",
         "packed": false,
-        "args": ["--user-data-dir=./AppData/launcher data"],
-        "targets": ["zip", "nsis7z"],
+        "args": [
+            "--user-data-dir=./AppData/launcher data"
+        ],
+        "targets": [
+            "zip",
+            "nsis7z"
+        ],
         "strippedProperties": [
             "description",
             "engines",
@@ -60,7 +65,7 @@
         "overriddenProperties": {
             "main": "app/index.html",
             "window": {
-                "title": "Selvania update",
+                "title": "Lakanal update",
                 "width": 400,
                 "height": 500,
                 "frame": false,
@@ -71,16 +76,16 @@
         },
         "outputPattern": "${NAME}-${PLATFORM}-${ARCH}",
         "win": {
-            "productName": "Selvania Launcher",
-            "companyName": "Selvania Launcher",
+            "productName": "Lakanal Launcher",
+            "companyName": "Lakanal Launcher",
             "copyright": "copyright",
             "icon": "src/assets/images/icon.ico"
         },
         "mac": {
-            "displayName": "Selvania-Launcher",
+            "displayName": "Lakanal-Launcher",
             "copyright": "copyright",
             "plistStrings": {
-                "CFBundleIdentifier": "Selvania-Launcher"
+                "CFBundleIdentifier": "Lakanal-Launcher"
             }
         },
         "nsis": {
@@ -90,7 +95,9 @@
         }
     },
     "nodemonConfig": {
-        "ignore": ["app/*"],
+        "ignore": [
+            "app/*"
+        ],
         "ext": "js,html,css"
     },
     "devDependencies": {
@@ -99,9 +106,9 @@
         "nwjs-build": "^1.2.0"
     },
     "dependencies": {
-        "minecraft-java-core": "^1.3.6",
+        "minecraft-java-core": "^1.4.2",
         "node-fetch": "^2.6.7",
-        "nw-autoupdater-luuxis": "^1.1.6"
+        "nw-autoupdater-luuxis": "^1.1.4"
     },
     "repository": {
         "type": "git",
